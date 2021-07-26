@@ -41,7 +41,7 @@ print("Number of zeros in Blood Pressure : ",data[data["BP"]==0].shape[0])
 print("Number of zeros in Skin Thickness : ",data[data["SkinThickness"]==0].shape[0])
 print("Number of zeros in Insulin : ",data[data["Insulin"]==0].shape[0])
 print("Number of zeros in BMI : ",data[data["BMI"]==0].shape[0])
-print("Number of zeros in Diabetes Prediction Factor : ",data[data["DPF"]==0].shape[0])
+print("Number of zeros in Diabetes Pedigree Function : ",data[data["DPF"]==0].shape[0])
 print("Number of zeros in Age : ",data[data["Age"]==0].shape[0])
 
 data["Glucose"]=data["Glucose"].replace(0,data["Glucose"].mean())
@@ -105,7 +105,7 @@ def prediction_calculator(n):
         Insulin_ip=input("Insulin level : ")
         Bp_ip=input("BP level : ")
         St_ip=input("Skin Thickness : ")
-        Dpf_ip=input("Diabetes prediction factor : ")
+        Dpf_ip=input("Diabetes pedigree function : ")
         
         c=np.array([Preg_ip,Glucose_ip,Bp_ip,St_ip,Insulin_ip,Bmi_ip,Dpf_ip,Age_ip])
         c_rs=c.reshape(1,-1)
