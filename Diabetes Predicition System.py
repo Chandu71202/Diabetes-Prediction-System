@@ -1,13 +1,18 @@
+#pip install pandas
 import pandas as pd
+#pip install numpy
 import numpy as np
+#pip install matplotlib
 import matplotlib.pyplot as plt
+#pip install seaborn
 import seaborn as sns
+#pip install scikit-learn
 from sklearn.ensemble import RandomForestClassifier 
 from sklearn.model_selection import train_test_split
 from sklearn import metrics
 
 	
-
+#reading the file
 data=pd.read_csv("./diabetes.csv")
 data.head(10)
 
@@ -17,6 +22,7 @@ data.shape
 #checking for null values in the data
 data.isnull().values.any()
 
+#renaming big coloums name
 data.rename(columns={'DiabetesPedigreeFunction':'DPF','BloodPressure':'BP'},inplace=True)
 data.head(5)
 
@@ -27,6 +33,7 @@ top_corr_features=corrmat.index
 plt.figure(figsize=(10,10))
 g=sns.heatmap(data[top_corr_features].corr(),annot=True,cmap="RdYlGn")
 
+#plotting correlation graph
 data.corr()
 
 print("Number of zeros in Glocose : ",data[data["Glucose"]==0].shape[0])
@@ -45,6 +52,7 @@ data["BMI"]=data["BMI"].replace(0,data["BMI"].mean())
 data["DPF"]=data["DPF"].replace(0,data["DPF"].mean())
 data["Age"]=data["Age"].replace(0,data["Age"].mean())
 
+#cleaning th data
 print("Number of zeros in Glocose : ",data[data["Glucose"]==0].shape[0])
 print("Number of zeros in Blood Pressure : ",data[data["BP"]==0].shape[0])
 print("Number of zeros in Skin Thickness : ",data[data["SkinThickness"]==0].shape[0])
