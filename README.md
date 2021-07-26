@@ -10,5 +10,6 @@ User must provide the following details
    5. Glucose Level
    6. Insulin Level
    7. Blood Pressure (BP)
-   8. Diabeted Pedigree Function
+   8. Diabeted Pedigree Function(DPF)
 
+User can get the Diabetes result ....
