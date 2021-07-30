@@ -52,7 +52,7 @@ data["BMI"]=data["BMI"].replace(0,data["BMI"].mean())
 data["DPF"]=data["DPF"].replace(0,data["DPF"].mean())
 data["Age"]=data["Age"].replace(0,data["Age"].mean())
 
-#cleaning th data
+#cleaning the data
 print("Number of zeros in Glocose : ",data[data["Glucose"]==0].shape[0])
 print("Number of zeros in Blood Pressure : ",data[data["BP"]==0].shape[0])
 print("Number of zeros in Skin Thickness : ",data[data["SkinThickness"]==0].shape[0])
