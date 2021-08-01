@@ -1,4 +1,4 @@
-<h1>What is Diabetes</h1>
+<h1>What is Diabetes ?</h1>
 <p>Diabetes is a type of chronic disease which is more common among the people of all age groups. Predicting this disease at an early stage can help a person to take the necessary precautions and change his/her lifestyle accordingly to either prevent the occurrences disease or control the disease (For people who already have the disease)</p>
 
 # Diabetes-Prediction-System
@@ -17,7 +17,7 @@ User must provide the following details
 
 User can get the Diabetes result ....
 
-<h3>Training of Model is done through</h3>
+<h2>Training of Model is done through</h2>
 <ol>
    <li>This Data set Comprizes of 769 rows of data</li>
    <li>Here I Used RandomForestClassifier to test and train the data</li>
