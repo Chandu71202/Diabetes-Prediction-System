@@ -22,11 +22,10 @@ User can get the Diabetes result ....
    <li>This Data set Comprizes of 769 rows of data</li>
    <li>Here I Used RandomForestClassifier to test and train the data</li>
    <li>The accuracy of the model is 0.75 out of 1</li>
-   <li>Why to choose RandomForestClassifier :- It gives the best accuracy for prediciting the outcome</li>\
+   <li>Why to choose RandomForestClassifier :- It gives the best accuracy for prediciting the outcome</li>
 </ol>
   
-   
-There are some graph representation from which we can conclude that <emp>Male</emp> are more affected than <emp>Female</emp>
+Through some of the graph representation from which we can conclude that <em>Male</em> are more affected than <em>Female</em>
 
 
 
