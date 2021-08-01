@@ -17,12 +17,12 @@ User must provide the following details
 
 User can get the Diabetes result ....
 
-<h3>Training of Model is done through<h3>
+<h3>Training of Model is done through</h3>
    1. This Data set Comprizes of 769 rows of data
    2. Here I Used RandomForestClassifier to test and train the data
    3. The accuracy of the model is 0.75 out of 1
    4. Why to choose RandomForestClassifier :- It gives the best accuracy for prediciting the outcome
-   
+  
    
 There are some graph representation from which we can conclude that <emp>Male</emp> are more affected than <emp>Female</emp>
 
